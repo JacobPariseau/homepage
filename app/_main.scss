@@ -1,0 +1,105 @@
+button {
+    cursor: pointer;
+
+    &.disabled {
+        cursor: normal;
+        @extend .noselect;
+    }
+    &.primary {
+        padding: 1rem;
+        height: 3rem;
+    }
+}
+
+.hide {
+    opacity: 0 !important;
+    @extend .noselect;
+}
+
+.wide {
+    width: 100%;
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+.noselect {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+    pointer-events: none;
+}
+
+/**
+ * Define Colours
+ * 
+ *
+*/
+
+.red {
+    background-color: #F44336;
+    &-text {
+        color: #b71c1c;
+    }
+    &-dark {
+        background-color: #b71c1c;
+    }
+}
+
+
+.yellow {
+    background-color: #fdd835;
+    &-text {
+        color: #fdd835;
+    }
+    &-dark {
+        background-color: #ff6f00;
+    }
+}
+
+.green {
+    background-color: #4caf50;
+    &-text {
+        color: #4caf50;
+    }
+    &-dark {
+        background-color: #1b5e20;
+    }
+}
+
+.cyan {
+    background-color: #03a9f4;
+    &-text {
+        color: #03a9f4;
+    }
+    &-dark {
+        background-color: #00838f;
+    }
+}
+
+.blue {
+    background-color: #304ffe;
+    &-text {
+        color: #304ffe;
+    }
+    &-dark {
+        background-color: #283593;
+    }
+}
+
+.magenta {
+    background-color: #9c27b0;
+    &-text {
+        color: #9c27b0;
+    }
+    &-dark {
+        background-color: #6a1b9a;
+    }
+}
