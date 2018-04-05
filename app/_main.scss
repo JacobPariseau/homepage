@@ -1,3 +1,19 @@
+body {
+    margin: 0;
+    font-family: 'Noticia Text', serif;
+    line-height: 1.5;
+    background: #f2f4ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Passion One', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 button {
     cursor: pointer;
 
@@ -37,6 +53,18 @@ button {
     pointer-events: none;
 }
 
+.break {
+    @media (max-width: 400px) {
+        &-small:before {
+            content: '\A';
+        }
+    }
+    @media (max-width: 600px) {
+        &-small:after {
+            content: '\A';
+        }
+    }
+}
 /**
  * Define Colours
  * 
@@ -102,4 +130,17 @@ button {
     &-dark {
         background-color: #6a1b9a;
     }
+}
+
+.darken {
+    &:before {
+        content: '';
+        background: rgba(0,0,0,0.64);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    color: white;
 }
