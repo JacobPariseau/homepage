@@ -8,10 +8,10 @@ const resolve = require("path").resolve;
 module.exports = {
     entry: "./staging/main.js",
     output: {
-        path: resolve("./dist"),
+        path: resolve("./docs"),
         filename: "[name].bundle.js",
         chunkFilename: "[hash].js",
-        publicPath: "dist/"
+        publicPath: "docs/"
     },
     module: {
         loaders: [{

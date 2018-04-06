@@ -108,7 +108,7 @@
             .pipe(rename(path => {
                 path.basename = path.basename.replace("_", "");
             }))
-            .pipe(gulp.dest('./dist'));
+            .pipe(gulp.dest('./docs'));
     });
 
 }
