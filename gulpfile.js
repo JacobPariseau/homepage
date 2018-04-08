@@ -68,7 +68,7 @@
 
 
     gulp.task('moveImages', () => {
-        return gulp.src('./app/**/*.png')
+        return gulp.src(['./app/**/*.png', './app/**/*.jpg'])
             .pipe(rename(filepath => {
                 filepath.dirname = "img";
             }))
@@ -108,7 +108,7 @@
             .pipe(rename(path => {
                 path.basename = path.basename.replace("_", "");
             }))
-            .pipe(gulp.dest('./docs'));
+            .pipe(gulp.dest('./dist'));
     });
 
 }

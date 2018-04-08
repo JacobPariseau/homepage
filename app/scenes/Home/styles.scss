@@ -71,8 +71,8 @@
             text-align: center;
             a {
                 display: inline-block;
-                width: 100px;
-                height: 100px;
+                width: 50px;
+                height: 50px;
             }
         }
     }
@@ -80,19 +80,23 @@
     .img {
         &-hero {
             background-size: cover;
-            background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/15/33/2048x1024/landscape-1439400031-gettyimages-187144066.jpg');
+            background-image: url('img/hero.jpg');
+        }
+        &-challengeaccepted {
+            background-size: cover;
+            background-image: url('img/preview-challengeaccepted.png');
         }
         &-magicfireball {
             background-size: cover;
-            background-image: url('https://jacobpariseau.com/img/magicfireball/preview.png');
+            background-image: url('img/preview-magicfireball.png');
         }
         &-firecup {
             background-size: cover;
-            background-image: url('https://jacobpariseau.com/img/firecup/preview.png');
+            background-image: url('img/preview-firecup.png');
         }
         &-masquerade {
             background-size: cover;
-            background-image: url('https://jacobpariseau.com/img/masquerade/preview.png');
+            background-image: url('img/preview-masquerade.png');
         }
         &-email {
             background-size: cover;
